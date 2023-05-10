@@ -1,0 +1,167 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- ///////////////////bootstrap////////////// -->
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+  <!-- ///////////////////Font-awesome////////////// -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ///////////////////customm css////////////// -->
+  <link href="css/style1.css" rel="stylesheet">
+</head>
+
+<body>
+ <div class="container">
+   
+ </div>
+</body>
+
+</html>
+<!-- ///////////////////jquery////////////// -->
+<script src="js/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+<!-- ///////////////////popper////////////// -->
+  <!-- <script src="js/popper.min.js"></script> -->
+  <script src="js/main.js"></script>
+  <!-- ///////////////////bootstrap js file////////////// -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- ///////////////////Chart////////////// -->
+<script src="js/Chart.min.js"></script>
+
+<script>
+  var xValues = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+
+  new Chart("myChart", {
+    type: "line",
+    data: {
+      labels: xValues,
+      datasets: [{
+        data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478, 8601, 240, 2000, 690, 8070, 6110, 6330, 5210, 9830, 478, 1601, 240, 1000, 1060, 9070, 110, 130, 520, 9820, 1078],
+        borderColor: "#4253A1",
+        fill: false
+      }, {
+        data: [860, 1140, 1060, 1060, 1070, 1110, 1330, 2210, 7830, 2478, 8601, 240, 2000, 62320, 8070, 6110, 6330, 5210, 9830, 478, 1601, 240, 1000, 1060, 9070, 110, 130, 520, 9820, 1078],
+        borderColor: "#FE4E85",
+        fill: false
+      }, {
+        data: [1600, 1700, 1700, 1900, 2000, 2700, 4000, 5000, 6000, 7000],
+        borderColor: "#0E568F",
+        fill: false
+      }, {
+        data: [300, 700, 2000, 5000, 6000, 4000, 2000, 1000, 200, 100],
+        borderColor: "#F84D4D",
+        fill: false
+      }]
+    },
+    options: {
+      legend: { display: false }
+    }
+  });
+</script>
+<script>
+  var xValues = ["feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 'Nov', 'Dec'];
+  var yValues = [55, 49, 44, 24, 15, 55, 49, 44, 44, 24, 15];
+  var barColors = ["#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF", "#BE99FF",];
+
+  new Chart("myChart2", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "World Wine Production 2018"
+      }
+    }, options: {
+      legend: { display: false }
+    }
+  });
+</script>
+<script>
+  var xValues = ["feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 'Nov', 'Dec'];
+  var yValues = [55, 49, 44, 24, 15, 55, 49, 44, 44, 24, 15];
+  var barColors = ["#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9", "#65CBE9",];
+
+  new Chart("myChart3", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "World Wine Production 2018"
+      }
+    }, options: {
+      legend: { display: false }
+    }
+  });
+</script>
+<script>
+  var xValues = ["feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 'Nov', 'Dec'];
+  var yValues = [55, 49, 44, 24, 15, 55, 49, 44, 44, 24, 15, 112];
+  var barColors = ["#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99", "#F6AE99",];
+
+  new Chart("myChart4", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "World Wine Production 2018"
+      }
+    }, options: {
+      legend: { display: false }
+    }
+  });
+</script>
+<script>
+  var xValues = ["feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 'Nov', 'Dec'];
+  var yValues = [55, 49, 44, 24, 15, 55, 49, 44, 44, 24, 15];
+  var barColors = ["#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B", "#F4D19B",];
+
+  new Chart("myChart5", {
+    type: "bar",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: "World Wine Production 2018"
+      }
+    }, options: {
+      legend: { display: false }
+    }
+  });
+</script>
